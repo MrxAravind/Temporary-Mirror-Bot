@@ -1,0 +1,17 @@
+name: Spidy File Ztream Bot
+on:
+  workflow_dispatch:
+jobs:
+  run-sync-service:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Downloading the Script
+        run: |
+          wget https://gist.github.com/BlackFoxy616/279251a7b1b76cb876081e0292a3316d/raw/tgztream.sh
+      - name: Permission
+        run: |
+           chmod 777 tgztream.sh
+      - name: Running the Script
+        run: |
+           sudo bash tgztream.sh
+           

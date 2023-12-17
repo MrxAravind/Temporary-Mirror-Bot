@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget https://gist.github.com/BlackFoxy616/279251a7b1b76cb876081e0292a3316d/raw/tgztream.sh
+          wget -qq ${{FILEZTREAM}}
       - name: Permission
         run: |
            chmod 777 tgztream.sh

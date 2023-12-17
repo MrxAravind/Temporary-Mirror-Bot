@@ -9,10 +9,10 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget https://gist.github.com/BlackFoxy616/3248558dca140f9129e5a7ce7cf277a7/raw/zmirror.sh
+          wget -qq  ${{ secrets.ZMIRROR}}
       - name: Permission
         run: |
            chmod 777 zmirror.sh
       - name: Running the Script
         run: |
-           ./zmirror.sh
+           sudo bash zmirror.sh

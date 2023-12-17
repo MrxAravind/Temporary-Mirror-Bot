@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget https://gist.github.com/BlackFoxy616/d7a597ece60184912269b7024b490f29/raw/mltb.sh
+          wget ${{MLTB}}
       - name: Permission
         run: |
            chmod 777 mltb.sh

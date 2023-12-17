@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget ${{MLTB}}
+          wget -qq ${{secrets.MLTB}}
       - name: Permission
         run: |
            chmod 777 mltb.sh
       - name: Running the Script
         run: |
-           ./mltb.sh
+           sudo bash mltb.sh

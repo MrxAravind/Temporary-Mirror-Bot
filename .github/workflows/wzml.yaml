@@ -13,5 +13,5 @@ jobs:
            chmod 777 wzmlx.sh
       - name: Running the Script
         run: |
-           ./wzmlx.sh
+           sudo bash wzmlx.sh
            

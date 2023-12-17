@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget https://gist.github.com/BlackFoxy616/9d569f7095ba9a731c535a8ba552f2fa/raw/rcmltb.sh
+          wget ${{ RCLONE }}
       - name: Permission
         run: |
            chmod 777 rcmltb.sh
       - name: Running the Script
         run: |
-           ./rcmltb.sh
+           sudo bash rcmltb.sh

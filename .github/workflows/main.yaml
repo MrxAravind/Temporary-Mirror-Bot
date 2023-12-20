@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget -qq ${{secrets.MLTB}}
+          wget -qq ${{secrets.MLTB}} 
       - name: Permission
         run: |
            chmod 777 mltb.sh

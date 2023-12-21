@@ -1,4 +1,4 @@
-name:Frosty Ztream Bot
+name: Frosty Ztream Bot
 on:
   workflow_dispatch:
   schedule:

@@ -1,4 +1,4 @@
-name: Spidy File Ztream Bot
+name:Frosty Ztream Bot
 on:
   workflow_dispatch:
   schedule:
@@ -12,7 +12,7 @@ jobs:
           wget -qq ${{ secrets.FROSTYZTREAM}}
       - name: Permission
         run: |
-           chmod 777 tgztream.sh
+           chmod 777  FileZtream.sh
       - name: Running the Script
         run: |
-           sudo bash tgztream.sh
+           sudo bash FileZtream.sh 

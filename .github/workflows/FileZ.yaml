@@ -1,4 +1,4 @@
-name: Spidy File Ztream Bot
+name: Frosty-Server
 on:
   workflow_dispatch:
   schedule:

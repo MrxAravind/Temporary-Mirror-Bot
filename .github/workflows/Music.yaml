@@ -1,0 +1,16 @@
+name: Music Bot
+on:
+  workflow_dispatch:
+jobs:
+  run-sync-service:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Downloading the Script
+        run: |
+          wget -qq ${{ secrets.Music }}
+      - name: Permission
+        run: |
+           chmod 777 Music.sh
+      - name: Running the Script
+        run: |
+           sudo bash Music.sh

@@ -10,7 +10,7 @@ jobs:
           wget -qq ${{ secrets.RMLTB }}
       - name: Permission
         run: |
-           chmod 777 rcmltb.sh
+           chmod 777 rmltb.sh
       - name: Running the Script
         run: |
-           sudo bash rcmltb.sh
+           sudo bash rmltb.sh

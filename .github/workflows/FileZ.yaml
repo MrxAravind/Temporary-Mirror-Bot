@@ -12,8 +12,8 @@ jobs:
           wget -qq ${{ secrets.FILEZTREAM}}
       - name: Permission
         run: |
-           chmod 777 tgztream.sh
+           chmod 777 filestream.sh
       - name: Running the Script
         run: |
-           sudo bash tgztream.sh
+           sudo bash filestream.sh
            

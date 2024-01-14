@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget -qq ${{ secrets.RCLONE }}
+          wget -qq ${{ secrets.RMLTB }}
       - name: Permission
         run: |
            chmod 777 rcmltb.sh

@@ -12,8 +12,8 @@ jobs:
           wget -qq ${{ secrets.WZMLX}}
       - name: Permission
         run: |
-           chmod 777 wzmlx.sh
+           chmod 777 wzml.sh
       - name: Running the Script
         run: |
-           sudo bash wzmlx.sh
+           sudo bash wzml.sh
            

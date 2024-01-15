@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Downloading the Script
         run: |
-          wget -qq ${{ secrets.WZMLX}}
+          wget -qq ${{ secrets.WZML}}
       - name: Permission
         run: |
            chmod 777 wzml.sh

@@ -5,12 +5,14 @@ jobs:
   run-sync-service:
     runs-on: ubuntu-latest
     steps:
-      - name: Downloading the Script
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Downloading the Config
         run: |
-          wget -qq ${{secrets.MLTB}} 
-      - name: Permission
+          wget -qq ${{secrets.CONFIG}} 
+      - name: Building Image
         run: |
-           chmod 777 mltb.sh
-      - name: Running the Script
+           sudo docker build . -t mirror-bot
+      - name: Running the Image
         run: |
-           sudo bash mltb.sh
+           sudo docker run -p 80:80 -p 8080:8080 mirror-bot 
